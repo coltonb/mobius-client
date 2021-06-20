@@ -14,10 +14,6 @@ jobs:
           node-version: "15.x"
       - name: Install dependencies
         run: npm install
-      - name: Setup Git Config
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
       - name: Build
         run: npm run build
       - name: Deploy
